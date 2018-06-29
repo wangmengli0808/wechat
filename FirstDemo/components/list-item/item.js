@@ -21,6 +21,14 @@ Component({
         this.setData({
             list: data
         })
+    },
+    toDetail() {
+        wx.navigateTo({
+            url: '../detail/detail'
+        })
+    },
+    backParams() {
+        this.triggerEvent('myevent', { id: 123 })
     }
   }
 })

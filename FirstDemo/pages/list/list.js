@@ -96,5 +96,11 @@ Page({
             sourceList: moment_list
         })
         wx.hideLoading();
+    },
+    onUnload() {
+        console.log(33333333333)
+    },
+    getMsg(e) {
+        console.log(e.detail)
     }
 })
