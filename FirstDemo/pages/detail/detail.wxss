@@ -1,0 +1,151 @@
+.source-detail {
+    padding-bottom: 130rpx;
+}
+.detail-types {
+    padding: 20rpx 30rpx;
+}
+.detail-types-title {
+    font-size: 32rpx;
+    font-weight: 600;
+    margin-bottom: 20rpx;
+}
+.swiper {
+    position: relative;
+}
+.swiper .total {
+    color:#fff;
+    background:rgba(0,0,0,.3);
+    font-size:24rpx;
+    padding:0 16rpx;
+    border-radius:10px;
+    position:absolute;
+    bottom:20rpx;
+    right:30rpx;
+}
+.con1 {
+    padding: 20rpx 0;
+    text-align: center;
+}
+.con1 .weui-flex__item {
+    position: relative;
+}
+.con1 .weui-flex__item:not(:first-child):before {
+    content: '';
+    border-left: 1px solid #E5E5E5;
+    position: absolute;
+    top: 10rpx;
+    bottom: 10rpx;
+    left: 0;
+}
+.con1 .text {
+    color: #666;
+    font-size: 26rpx;
+}
+.con1 .weui-red {
+    font-size: 30rpx;
+    font-weight: 600;
+}
+.types {
+    margin: 8rpx 0 16rpx;
+}
+.types-text {
+  font-size: 24rpx;
+  padding: 4rpx 10rpx;
+  margin-right: 6rpx;
+  border-radius: 6rpx;
+}
+.con2 {
+    font-size: 24rpx;
+    line-height: 42rpx;
+}
+.con2 .text-lf {
+    color: #999;
+}
+.to-list {
+    margin: 30rpx 0;
+    text-align: center;
+}
+.to-list view {
+    color: #3072F6;
+    background: #f5f5f5;
+    font-size: 26rpx;
+    font-weight: bold;
+    padding: 16rpx;
+    border-radius: 30rpx;
+}
+.weui-cell:before, .weui-cells:before, .weui-media-box:before, .weui-cells:after {
+  content: normal;
+}
+.con3 .weui-cells {
+    font-size: 24rpx;
+}
+.con3 .weui-cell__bd {
+    color: #999;
+    margin-left: 30rpx;
+}
+.con3 .weui-cell__ft {
+    color: #333;
+}
+.weui-cells {
+    padding: 0 30rpx;
+}
+.weui-cell {
+    padding: 16rpx 0;
+}
+.cell-title .weui-cell__bd {
+    font-size: 32rpx;
+    font-weight: 600;
+}
+.con4 .desc {
+    line-height: 40rpx;
+    color: #555;
+    font-size: 26rpx;
+}
+.con5 .weui-media-box__hd_in-appmsg {
+    width: 90rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.scroll-view {
+    white-space: nowrap;
+}
+.scroll-view-item {
+    display: inline-block;
+    margin-right: 30rpx;
+}
+.scroll-view .desc {
+    font-size: 28rpx;
+}
+.scroll-view .price {
+    font-size: 24rpx;
+}
+.scroll-view .weui-gray {
+    margin-left: 20rpx;
+}
+.source-footer {
+    align-items: center;
+    text-align: center;
+    background: #E75C61;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 9999;
+}
+.source-footer .collect {
+    background: #F1F1F1;
+}
+.source-footer .collect-text {
+    color: #666;
+    font-size: 24rpx;
+    margin-top: -12rpx;
+}
+.source-footer .zixun {
+    color: #fff;
+    font-size: 16px;
+}
+.source-footer .weui-flex__item {
+    height: 100%;
+    padding: 10rpx 0;
+}

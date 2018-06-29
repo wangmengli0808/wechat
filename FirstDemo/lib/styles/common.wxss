@@ -1,0 +1,32 @@
+@import './weui.wxss';
+/**common.wxss**/
+.weui-green {
+  color: #00C482;
+}
+.weui-orange {
+  color: #FF8957;
+}
+.weui-blue {
+  color: #56C1FF;
+}
+.weui-red {
+  color: #E75C61;
+}
+.weui-gray {
+  color: #999;
+}
+.weui-bg-green {
+  background: rgba(0, 196, 130, .2);
+}
+.weui-bg-orange {
+  background: rgba(255, 137, 87, .2);
+}
+.weui-bg-blue {
+  background: rgba(86, 193, 255, .2);
+}
+.weui-bg-red {
+  background: rgba(231, 92, 97, .2);
+}
+.weui-panel:before, .weui-panel:after, .weui-panel__hd:after {
+  content: normal;
+}

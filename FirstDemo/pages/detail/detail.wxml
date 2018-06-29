@@ -1,0 +1,261 @@
+<view class="source-detail">
+    <view>
+        <view class="swiper">
+            <swiper indicator-dots="{{false}}" 
+                style="height: {{winWidth * 0.67}}px"
+                autoplay="{{false}}" 
+                bindtap="previewImage"
+                bindchange="onChange">
+                <block wx:for="{{swiperImgs}}" wx:key="index">
+                    <swiper-item>
+                        <image class="weui-article__img" mode="aspectFill" data-src="{{item}}" src="{{item}}"
+                   style="width: {{winWidth}}px;height: {{winWidth * 0.67}}px"/>
+                    </swiper-item>
+                </block>
+            </swiper>
+            <view class="total">
+                {{currentIndex + 1}}/{{total}}
+            </view>
+        </view>
+        <view class="detail-types">
+            <view class="detail-types-title">
+                中间层三居室，户型方正，采光好，南北通风，明厨明卫，视野佳，拎包入住
+            </view>
+            <view class="weui-flex bd-top bd-bottom con1">
+                <view class="weui-flex__item">
+                    <view class="text">售价</view>
+                    <view class="weui-red">750万</view>
+                </view>
+                <view class="weui-flex__item">
+                    <view class="text">房型</view>
+                    <view class="weui-red">3室2厅</view>
+                </view>
+                <view class="weui-flex__item">
+                    <view class="text">建筑面积</view>
+                    <view class="weui-red">128㎡</view>
+                </view>
+            </view>
+            <view class="types">
+                <text class="types-text weui-green weui-bg-green">地铁</text>
+                <text class="types-text weui-orange weui-bg-orange">满五年</text>
+                <text class="types-text weui-blue weui-bg-blue">随时看房</text>
+                <text class="types-text weui-red weui-bg-red">新上</text>
+            </view>
+            <view class="con2">
+                <view class="weui-flex">
+                    <view class="weui-flex__item">
+                        <text class="text-lf">单价：</text>
+                        <text class="text-rt">72125元/平</text>
+                    </view>
+                    <view class="weui-flex__item">
+                        <text class="text-lf">挂牌：</text>
+                        <text class="text-rt">2017.9.25</text>
+                    </view>
+                </view>
+                <view class="weui-flex">
+                    <view class="weui-flex__item">
+                        <text class="text-lf">朝向：</text>
+                        <text class="text-rt">南北通透</text>
+                    </view>
+                    <view class="weui-flex__item">
+                        <text class="text-lf">楼层：</text>
+                        <text class="text-rt">中楼层/26</text>
+                    </view>
+                </view>
+                <view class="weui-flex">
+                    <view class="weui-flex__item">
+                        <text class="text-lf">类型：</text>
+                        <text class="text-rt">塔楼</text>
+                    </view>
+                    <view class="weui-flex__item">
+                        <text class="text-lf">电梯：</text>
+                        <text class="text-rt">有电梯</text>
+                    </view>
+                </view>
+                <view class="weui-flex">
+                    <view class="weui-flex__item">
+                        <text class="text-lf">装修：</text>
+                        <text class="text-rt">豪装</text>
+                    </view>
+                    <view class="weui-flex__item">
+                        <text class="text-lf">年代：</text>
+                        <text class="text-rt">2017年</text>
+                    </view>
+                </view>
+                <view class="weui-flex">
+                    <view class="weui-flex__item">
+                        <text class="text-lf">小区：</text>
+                        <text class="text-rt">奥林匹克花园</text>
+                    </view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </view>
+            </view>
+            <view class="to-list">
+                <view>更多房源信息</view>
+            </view>
+        </view>
+        <view class="map">
+            <map
+                    style="width: 100%; height: 400rpx;"
+                    latitude="{{latitude}}"
+                    longitude="{{longitude}}"
+                    markers="{{markers}}"
+            >
+            </map>
+        </view>
+        <view class="con3">
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell">
+                    <view class="weui-cell__hd">
+                        双井
+                    </view>
+                    <view class="weui-cell__bd">10号线</view>
+                    <view class="weui-cell__ft">671米</view>
+                </view>
+                <view class="weui-cell">
+                    <view class="weui-cell__hd">
+                        广渠门外
+                    </view>
+                    <view class="weui-cell__bd">7号线</view>
+                    <view class="weui-cell__ft">1.7公里</view>
+                </view>
+            </view>
+        </view>
+        <view class="con4 weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_small-appmsg">
+                    <view class="weui-cells weui-cells_in-small-appmsg">
+                        <navigator url="" class="weui-cell weui-cell_access cell-title" hover-class="none">
+                            <view class="weui-cell__bd weui-cell_primary">
+                                房源介绍
+                            </view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>
+                    </view>
+                </view>
+                <view class="weui-media-box weui-media-box_text" style="padding: 0 30rpx;">
+                    <view class="weui-media-box__desc desc">
+                        中间层三居室，户型方正，采光好，南北通风，明厨明卫，视野佳，拎包入住中间层三居室，户型方正，采光好，南北通风，明厨明卫，视野佳，拎包入住...
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="con5 weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_small-appmsg">
+                    <view class="weui-cells weui-cells_in-small-appmsg">
+                        <navigator url="" class="weui-cell weui-cell_access cell-title bd-top" hover-class="none">
+                            <view class="weui-cell__bd weui-cell_primary">
+                                看房记录
+                            </view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                        </navigator>
+                    </view>
+                </view>
+                <view class="weui-media-box weui-media-box_appmsg" style="padding: 0 30rpx;">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../lib/img/agent-logo.jpg" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">刘胡兰</view>
+                        <view class="weui-media-box__desc">共带看本房22次, 最新带看：2018.06.27</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="con6 weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_small-appmsg">
+                    <view class="weui-cells weui-cells_in-small-appmsg">
+                        <navigator url="" class="weui-cell weui-cell_access cell-title bd-top" hover-class="none">
+                            <view class="weui-cell__bd weui-cell_primary">
+                                同小区房源
+                            </view>
+                            <view class="weui-cell__ft weui-cell__ft_in-access">
+                                <text style="font-size: 28rpx;">更多房源</text>
+                            </view>
+                        </navigator>
+                    </view>
+                </view>
+                <view class="scroll-list" style="padding-left: 30rpx;">
+                    <scroll-view class="scroll-view" scroll-x="true">
+                        <view class="scroll-view-item" style="width: {{winWidth * 0.55}}px;">
+                            <image src="../../lib/img/banner1.jpg" style="width: 100%;height: {{winWidth * 0.55 * 0.75}}px"></image>
+                            <view class="desc">4室2厅/243㎡/南北通透</view>
+                            <view class="price">
+                                <text class="weui-red"><text style="font-size: 30rpx;">1100</text>万元</text>
+                                <text class="weui-gray">11546元/平</text>
+                            </view>
+                        </view>
+                        <view class="scroll-view-item" style="width: {{winWidth * 0.55}}px;">
+                            <image src="../../lib/img/banner1.jpg" style="width: 100%;height: {{winWidth * 0.55 * 0.75}}px"></image>
+                            <view class="desc">4室2厅/243㎡/南北通透</view>
+                            <view class="price">
+                                <text class="weui-red"><text style="font-size: 30rpx;">1100</text>万元</text>
+                                <text class="weui-gray">11546元/平</text>
+                            </view>
+                        </view>
+                        <view class="scroll-view-item" style="width: {{winWidth * 0.55}}px;">
+                            <image src="../../lib/img/banner1.jpg" style="width: 100%;height: {{winWidth * 0.55 * 0.75}}px"></image>
+                            <view class="desc">4室2厅/243㎡/南北通透</view>
+                            <view class="price">
+                                <text class="weui-red"><text style="font-size: 30rpx;">1100</text>万元</text>
+                                <text class="weui-gray" style="margin-left: 20rpx;">11546元/平</text>
+                            </view>
+                        </view>
+                    </scroll-view>
+                </view>
+            </view>
+        </view>
+        <view class="con6 weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_small-appmsg">
+                    <view class="weui-cells weui-cells_in-small-appmsg">
+                        <navigator url="" class="weui-cell weui-cell_access cell-title" hover-class="none">
+                            <view class="weui-cell__bd weui-cell_primary">
+                                推荐房源(8)
+                            </view>
+                        </navigator>
+                    </view>
+                </view>
+                <view class="scroll-list" style="padding-left: 30rpx;">
+                    <scroll-view class="scroll-view" scroll-x="true">
+                        <view class="scroll-view-item" style="width: {{winWidth * 0.55}}px;">
+                            <image src="../../lib/img/banner1.jpg" style="width: 100%;height: {{winWidth * 0.55 * 0.75}}px"></image>
+                            <view class="desc">4室2厅/243㎡/南北通透</view>
+                            <view class="price">
+                                <text class="weui-red"><text style="font-size: 30rpx;">1100</text>万元</text>
+                                <text class="weui-gray">11546元/平</text>
+                            </view>
+                        </view>
+                        <view class="scroll-view-item" style="width: {{winWidth * 0.55}}px;">
+                            <image src="../../lib/img/banner1.jpg" style="width: 100%;height: {{winWidth * 0.55 * 0.75}}px"></image>
+                            <view class="desc">4室2厅/243㎡/南北通透</view>
+                            <view class="price">
+                                <text class="weui-red"><text style="font-size: 30rpx;">1100</text>万元</text>
+                                <text class="weui-gray">11546元/平</text>
+                            </view>
+                        </view>
+                        <view class="scroll-view-item" style="width: {{winWidth * 0.55}}px;">
+                            <image src="../../lib/img/banner1.jpg" style="width: 100%;height: {{winWidth * 0.55 * 0.75}}px"></image>
+                            <view class="desc">4室2厅/243㎡/南北通透</view>
+                            <view class="price">
+                                <text class="weui-red"><text style="font-size: 30rpx;">1100</text>万元</text>
+                                <text class="weui-gray" style="margin-left: 20rpx;">11546元/平</text>
+                            </view>
+                        </view>
+                    </scroll-view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="source-footer weui-flex">
+        <view class="weui-flex__item collect" style='flex: 1'>
+            <image src="../../lib/img/heart-empty.png" style="width: 36rpx;height: 36rpx;"></image>
+            <view class="collect-text">收藏</view>
+        </view>
+        <view class="weui-flex__item zixun" style='flex: 4'>
+            咨询经纪人
+        </view>
+    </view>
+</view>

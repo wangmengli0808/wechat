@@ -1,0 +1,31 @@
+@import 'lib/styles/common.wxss';
+/**app.wxss**/
+.caret {
+    width: 0;
+    height: 0;
+    color: #999;
+    margin-left: 8rpx;
+    vertical-align: middle;
+    border-top: 8rpx solid;
+    border-right: 8rpx solid transparent;
+    border-left: 8rpx solid transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+}
+.bd-top {
+    border-top: 1px solid #E5E5E5;
+}
+.bd-bottom {
+    border-bottom: 1px solid #E5E5E5;
+}
+.bd-left {
+    border-left: 1px solid #E5E5E5;
+}
+.bd-right {
+    border-right: 1px solid #E5E5E5;
+}
+.weui-cell__ft:after {
+    border-width: 1px 1px 0 0;
+    border-color: #999;
+}

@@ -1,0 +1,21 @@
+<view class="source-item">
+    <navigator url="../../pages/detail/detail?id=123" hover-class="none" class="weui-media-box weui-media-box_appmsg" hover-class="none" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="{{item.img_src}}"/>
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__desc">{{item.title}}</view>
+            <view class="weui-media-box__title">{{item.room}}室{{item.hall}}厅/{{item.area}}平/{{item.type}}/{{item.community_title}}</view>
+            <view class="types">
+                <text class="types-text weui-green weui-bg-green">地铁</text>
+                <text class="types-text weui-orange weui-bg-orange">满五年</text>
+                <text class="types-text weui-blue weui-bg-blue">随时看房</text>
+                <text class="types-text weui-red weui-bg-red">新上</text>
+            </view>
+            <view>
+                <text class="weui-red price">{{item.price}}万</text>
+                <text class="unit-price">{{item.unit_price}}元/平</text>
+            </view>
+        </view>
+    </navigator>
+</view>

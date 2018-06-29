@@ -1,0 +1,38 @@
+@import '../../lib/styles/common.wxss';
+.source-item .weui-media-box__desc {
+  color: #333;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.source-item .weui-media-box__title {
+  color: #666;
+  font-size: 24rpx;
+  margin-top: 6rpx;
+}
+.source-item .types {
+  margin-top: -10rpx;
+  margin-bottom: -10rpx;
+}
+.source-item .types-text {
+  font-size: 24rpx;
+  padding: 2rpx 10rpx;
+  margin-right: 6rpx;
+  border-radius: 6rpx;
+}
+.source-item .price {
+  font-size: 32rpx;
+}
+.source-item .unit-price {
+  color: #999;
+  font-size: 24rpx;
+  margin-left: 40rpx;
+}
+.weui-media-box__hd_in-appmsg {
+  width: 220rpx;
+  height: 165rpx;
+}
+.weui-media-box {
+  -webkit-box-align: inherit;
+  -webkit-align-items: inherit;
+  align-items: inherit; 
+}

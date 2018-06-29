@@ -1,0 +1,10 @@
+@import '../../components/list-item/item.wxss';
+.list-types {
+    font-size: 24rpx;
+    text-align: center;
+    align-items: center;
+}
+.list-types .weui-flex__item {
+    position: relative;
+    padding: 20rpx 0;
+}

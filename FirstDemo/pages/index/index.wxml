@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="page homepage">
+    <view class="header-img" style="height: {{imgHeight}}">
+        <image class="weui-article__img" src="../../lib/img/banner1.jpg"
+               style="width: {{imgWidth}};height: {{imgHeight}}"/>
+    </view>
+    <view class="weui-search-bar">
+        <view class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon> 
+                <input type="text" class="weui-search-bar__input" placeholder="搜索" bindfocus="toSearch"/>
+            </view>
+        </view>
+    </view>
+    <view class="home-type">
+        <view class="weui-flex">
+            <navigator url="../../pages/list/list?type=sale" hover-class="none" class="weui-flex__item">
+                <image class="icon-cate" src="../../lib/img/cate-icon1.png"/>
+                <view class="name">二手房</view>
+            </navigator>
+            <navigator url="../../pages/list/list?type=lease" hover-class="none" class="weui-flex__item">
+                <image class="icon-cate" src="../../lib/img/cate-icon2.png"/>
+                <view class="name">租房</view>
+            </navigator>
+            <navigator url="../../pages/list/list?type=punlish" hover-class="none" class="weui-flex__item">
+                <image class="icon-cate" src="../../lib/img/cate-icon3.png"/>
+                <view class="name">发布房源</view>
+            </navigator>
+        </view>
+    </view>
+    <view class="home-recommend">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd recommend-title">
+              <view class="weui-flex">
+                <view class="weui-flex__item">推荐房源</view>
+                <view class="weui-flex__item right">
+                  <text class="sale-text {{sourceType == 'sale' ? 'weui-red' : ''}}" data-type="sale" bindtap="typeToggle">二手房</text>
+                  <text class="lease-text {{sourceType == 'lease' ? 'weui-red' : ''}}" data-type="lease" bindtap="typeToggle">租房</text>
+                </view>
+              </view>
+            </view>
+            <view class="weui-panel__bd">
+               <list-item list="{{sourceList}}"></list-item>
+            </view>
+        </view>
+    </view>
+    <view class="to-list">
+        <view>查看全部房源</view>
+    </view>
+</view>
