@@ -95,12 +95,22 @@
             </view>
         </view>
         <view class="map">
-            <map style="width: 100%; height: 400rpx;"
+            <!-- <map style="width: 100%; height: 400rpx;"
                 latitude="{{latitude}}"
                 longitude="{{longitude}}"
                 markers="{{markers}}"
+                bindmarkertap="markertap"
             >
-            </map>
+            </map> -->
+            <map id="map" style="width: 100%; height: 400rpx;"
+                latitude="{{latitude}}"
+                longitude="{{longitude}}"
+                markers="{{markers}}" scale="14" 
+                controls="{{controls}}" 
+                bindcontroltap="controltap"
+                bindmarkertap="markertap"
+                polyline="{{polyline}}"
+                bindregionchange="regionchange" ></map>
         </view>
         <view class="con3">
             <view class="weui-cells weui-cells_after-title">

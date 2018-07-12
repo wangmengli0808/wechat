@@ -44,7 +44,7 @@
             </view>
         </view>
     </view>
-    <view class="to-list">
+    <navigator url="../list/list?type=sale" hover-class="none" class="to-list">
         <view>查看全部房源</view>
-    </view>
+    </navigator>
 </view>

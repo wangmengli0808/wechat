@@ -1,0 +1,110 @@
+<view class="detail">
+    <view style="width: {{winWindow}}px;height: {{winWindow * 0.75}}px;padding: 30rpx;box-sizing: border-box;">
+        <image src="../../lib/img/cake1.jpg" mode="aspectFill" style="width: 100%;height: 100%;"></image>
+    </view>
+    <view class="detail-box">
+        <view class="detail-box-title">草莓拿破仑蛋糕（5-8人食）----拿破仑蛋糕</view>
+        <view>
+            <view class="horizontal-line"></view>
+            <view class="weui-flex">
+                <view class="text-lf">材 料:</view>
+                <view class="weui-flex__item">
+                    <view>推荐食用：  收到蛋糕后2～3小时内食用</view>
+                    <view>适合节日：所有节日</view>
+                    <view>适合人群：所有人群</view>
+                    <view>如订购方形蛋糕5磅规格蛋糕请提前24小时预订，如订购圆形蛋糕5磅规格蛋糕请提前48小时预订。</view>
+                    <view>17×17cm</view>
+                </view>
+            </view>
+            <view class="weui-flex">
+                <view class="text-lf">包 装:</view>
+                <view class="weui-flex__item">
+                    <view>此款蛋糕不赠送贺卡，可写14字以内巧克力牌</view>
+                </view>
+            </view>
+            <view class="weui-flex">
+                <view class="text-lf">备 注:</view>
+                <view class="weui-flex__item">
+                    <view>盒子上娇艳欲滴的红宝石，令人无法移开目光。像潘多拉的盒子，吸引好奇的味蕾。清脆的声音，没有惊醒少女的梦。（鲜果因时令季节变化，会做适当调整）</view>
+                </view>
+            </view>
+            <view class="weui-flex">
+                <view class="text-lf">说 明:</view>
+                <view class="weui-flex__item">
+                    <view class="weui-orange">提前一天预定，每天晚上9点前下单可安排第二天10点后配送</view>
+                </view>
+            </view>
+            <view class="horizontal-line"></view>
+            <view class="weui-flex">
+                <view class="text-lf">尺 寸:</view>
+                <view class="weui-flex__item">
+                    <view class="choose {{size == 6 ? 'active' : ''}}" data-size="6" bindtap="toggleSize">
+                        6寸 
+                        <image src="../../lib/img/icon-duihao.png" mode="aspectFill" class="icon-check"></image>
+                    </view>
+                    <view class="choose {{size == 8 ? 'active' : ''}}" data-size="8" bindtap="toggleSize">
+                        8寸 
+                        <image src="../../lib/img/icon-duihao.png" mode="aspectFill" class="icon-check"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-flex price">
+                <view class="weui-flex__item">
+                    <view style="text-decoration: line-through;">市场价： ￥198</view>
+                    <view>
+                        花礼价： <text class="weui-orange current-price">￥198</text>
+                    </view>
+                </view>
+                <view>
+                    <text class="add">＋ 加入购物车</text>
+                </view>
+            </view>
+        </view>
+        <view class="evaluation">
+            <view class="weui-cell title">
+                <view class="weui-cell__bd">
+                    商品评价 
+                    <text style="font-size: 20rpx;font-weight: normal;">(好评度<text class="weui-orange">100%</text>)</text>
+                </view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"><text class="total">5条评论</text></view>
+            </view>
+            <view class="weui-panel weui-panel_access">
+                <view class="weui-panel__bd">
+                    <view class="weui-media-box weui-media-box_appmsg">
+                        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                            <image class="weui-media-box__thumb" src="../../lib/img/me-gray.png" />
+                        </view>
+                        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                            <view class="weui-media-box__title">
+                                <view class="weui-flex">
+                                    <view class="weui-flex__item">144552qqqw</view>
+                                    <view>2018.07.02</view>
+                                </view>
+                            </view>
+                            <view class="weui-media-box__desc zan">赞了该商品</view>
+                            <view class="weui-media-box__desc discuss">蛋糕很好吃~</view>
+                        </view>
+                    </view>
+                    <view class="weui-media-box weui-media-box_appmsg">
+                        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                            <image class="weui-media-box__thumb" src="../../lib/img/me-gray.png" />
+                        </view>
+                        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                            <view class="weui-media-box__title">
+                                <view class="weui-flex">
+                                    <view class="weui-flex__item">144552qqqw</view>
+                                    <view>2018.07.02</view>
+                                </view>
+                            </view>
+                            <view class="weui-media-box__desc zan">赞了该商品</view>
+                            <view class="weui-media-box__desc discuss">蛋糕很好吃~</view>
+                            <view style="width: {{winWindow * 0.55}}px;height: {{winWindow * 0.55}}px;margin-top: 16rpx;">
+                                <image src="../../lib/img/cake1.jpg" mode="aspectFill" style="width: 100%;height: 100%;"></image>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

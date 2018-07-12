@@ -1,0 +1,46 @@
+.pd {
+    padding: 0 30rpx;
+}
+.weui-panel {
+    margin-top: 0;
+}
+.weui-media-box_appmsg {
+    padding: 20rpx 30rpx;
+}
+.weui-media-box__hd_in-appmsg {
+    width: 70rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.weui-media-box__title {
+    color: #666;
+    font-size: 24rpx;
+}
+.weui-media-box__desc {
+    color: #999;
+    font-size: 20rpx;
+    margin-top: 8rpx;
+}
+.title {
+    font-size: 28rpx;
+    font-weight: 600;
+}
+.desc {
+    color: #666;
+    font-size: 24rpx;
+    margin: 4rpx 0 12rpx;
+}
+.actions {
+    color: #666;
+    font-size: 22rpx;
+    margin: 10rpx 0;
+    align-items: center;
+}
+.icon {
+    width: 30rpx;
+    height: 30rpx;
+    position: relative;
+    top: 2px;
+}

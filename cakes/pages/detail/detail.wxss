@@ -1,0 +1,102 @@
+.detail-box {
+    line-height: 42rpx;
+    color: #666;
+    font-size: 24rpx;
+    padding: 0 30rpx 30rpx;
+}
+.detail-box-title {
+    color: #333;
+    font-size: 30rpx;
+    font-weight: 700;
+    margin-bottom: 20rpx;
+}
+.text-lf {
+    width: 100rpx;
+}
+.choose {
+    display: inline-block;
+    font-size: 20rpx;
+    padding: 0 40rpx;
+    margin-right: 10rpx;
+    border: 1px solid #D9D9D9;
+    position: relative;
+}
+.choose.active {
+    color: #ff6a00;
+    border-color: #ff6a00;
+}
+.icon-check {
+    display: none;
+    width: 26rpx;
+    height: 26rpx;
+    position: absolute;
+    right: 2rpx;
+    bottom: 0;
+}
+.choose.active .icon-check {
+    display: inline-block;
+}
+.price {
+    padding: 20rpx 0 30rpx 30rpx;
+    align-items: center;
+}
+.current-price {
+    font-weight: 700;
+}
+.add {
+    color: #333;
+    background: #FFD263;
+    font-size: 24rpx;
+    font-weight: 600;
+    padding: 8rpx 16rpx;
+    border-radius: 30rpx;
+}
+.evaluation {
+    margin-top: 20rpx;
+}
+.evaluation .title {
+    color: #333;
+    font-size: 28rpx;
+    font-weight: 700;
+}
+.weui-cell {
+    padding: 0;
+}
+.weui-media-box_appmsg {
+    padding: 20rpx 0;
+    -webkit-box-align: inherit;
+    -webkit-align-items: inherit;
+    align-items: inherit;
+}
+.weui-media-box__hd_in-appmsg {
+    width: 70rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.weui-cell__ft:after {
+    border-width: 1px 1px 0 0;
+    border-color: #999;
+}
+.weui-media-box__title, .total {
+    color: #999;
+    font-size: 20rpx;
+    font-weight: normal;
+}
+.zan {
+    font-size: 20rpx;
+    margin: 4rpx 0 16rpx;
+}
+.discuss {
+    color: #333;
+    font-size: 26rpx;
+}
+.weui-media-box:before {
+    left: 0;
+}
+.total {
+    position: relative;
+    top: -2rpx;
+    right: 10rpx;
+}

@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="home">
+    <!-- <view class="weui-search-bar">
+        <view class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon> 
+                <input type="text" class="weui-search-bar__input" placeholder="找找好吃的"/>
+            </view>
+        </view>
+    </view> -->
+    <view class="swiper">
+        <swiper indicator-dots="{{false}}" 
+            autoplay="{{false}}" 
+            previous-margin="140rpx"
+            next-margin="140rpx"
+            bindtap="toList"
+            bindchange="swiperChange">
+            <block wx:for="{{cakes}}" wx:key="index">
+                <swiper-item class="{{swiperIndex == index ? 'active' : ''}}">
+                    <image class="slide-image" mode="aspectFill" data-src="{{item.src}}" src="{{item.src}}"/>
+                    <view class="slide-text">{{item.desc}}</view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+</view>

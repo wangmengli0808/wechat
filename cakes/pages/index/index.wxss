@@ -1,0 +1,61 @@
+/**index.wxss**/
+.weui-search-bar {
+  background-color: transparent;
+  padding: 16rpx 36rpx;
+  border: 0;
+}
+.weui-search-bar__form {
+  padding: 14rpx 0;
+  border-radius: 40rpx;
+  border:0;
+  box-shadow:0 0 10rpx #bbb;
+}
+.weui-search-bar__box {
+  padding-right: 0;
+}
+.homm-flex {
+    font-size: 28rpx;
+    padding: 16rpx 0;
+    text-align: center;
+}
+.homm-flex .icon {
+    width: 50rpx;
+    height: 50rpx;
+}
+.homm-flex .text {
+    font-size: 24rpx;
+}
+
+
+swiper {
+  width: 750rpx;
+  height: 100vh;
+}
+swiper-item {
+  padding-top: 100rpx;
+}
+image {
+  width: 375rpx;
+  height: 667rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -188rpx;
+}
+.active .slide-image {
+  transform: scale(1.2);
+  transition: all .5s ease-in 0s;
+  box-shadow:0 0 10rpx 3rpx #aaa;
+}
+.active .slide-text {
+    display: -webkit-box;
+    transition: all .5s ease-in 0s;
+}
+.slide-text {
+    display: none;
+    font-size: 24rpx;
+    margin-top: 767rpx;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

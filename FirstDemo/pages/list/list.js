@@ -3,6 +3,7 @@ const app = getApp()
 Page({
     data: {
         scrollHeight: app.data.windowHeight + 8 + 'px',
+        is_botttom: false,
         sourceList: [
             {
                 img_src: '../../lib/img/banner1.jpg',
@@ -75,6 +76,12 @@ Page({
         })
     },
     scrollMore(e) {
+        if (this.data.sourceList.length == 50) {
+            this.setData({
+                is_botttom: true
+            })
+            return
+        }
         wx.showLoading({
             title: '玩命加载中...'
         })

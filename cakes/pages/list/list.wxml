@@ -1,0 +1,16 @@
+<view class="list">
+     <view style="width: {{winWindow}}px;height: {{winWindow * 0.75}}px;">
+        <image src="../../lib/img/cake1.jpg" mode="aspectFill" style="width: 100%;height: 100%;"></image>
+    </view> 
+    <view class="list-tabs">
+        <text class="tab active">甜点</text>
+        <text class="tab">饮品</text>
+    </view>
+    <view class="list-box">
+        <navigator url="../../pages/detail/detail?id=123" hover-class="none" class="list-item" style="width: {{winWindow * 0.5}}px;" wx:for="{{lists}}" wx:key="index" wx:for-item="item">
+            <image src="{{item.src}}" mode="aspectFill" style="width: 100%;height: {{winWindow * 0.5}}px;"></image>
+            <view class="price">￥{{item.price}}</view>
+            <view class="desc">{{item.descript}}</view>
+        </navigator>
+    </view>
+</view>

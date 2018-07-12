@@ -19,8 +19,17 @@ Page({
             longitude: 113.670513,
             name: '二七塔',
             iconPath: '../../lib/img/icon-current@2x.png',
-            width: 22,
-            height: 30
+            width: 24,
+            height: 32,
+            callout: {
+                content: '二七塔',
+                color: '#FF0000',
+                fontSize: 14,
+                padding: 5,
+                borderRadius: 10,
+                // display: 'BYCLICK'
+                display: 'ALWAYS'
+            }
         }]
     },
     onLoad(options) {
@@ -42,5 +51,14 @@ Page({
         this.setData({
             currentIndex: e.detail.current
         })
+    },
+    regionchange(e) {
+        console.log(e.type)
+    },
+    markertap(e) {
+        console.log(e.markerId)
+    },
+    controltap(e) {
+        console.log(e.controlId)
     }
 })

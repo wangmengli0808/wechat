@@ -1,0 +1,38 @@
+.list-tabs {
+    text-align: center;
+    margin: 20rpx 0 30rpx;
+}
+.tab {
+    color: #666;
+    font-size: 24rpx;
+    margin-right: 20rpx;
+    padding: 14rpx 0;
+    border-bottom: 1px solid transparent;
+}
+.tab.active {
+    color: #ff6a00;
+    border-bottom-color: #ff6a00;
+}
+.list-item {
+    display: inline-block;
+    font-size: 24rpx;
+    padding: 0 30rpx 30rpx;
+    box-sizing: border-box;
+}
+.list-item:nth-child(2n) {
+    padding-left: 15rpx;
+}
+.list-item:nth-child(2n-1) {
+    padding-right: 15rpx;
+}
+.list-item .price {
+    color: #ff6a00;
+    font-size: 28rpx;
+    font-weight: 700;
+}
+.list-item .desc {
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

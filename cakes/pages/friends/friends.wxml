@@ -1,0 +1,61 @@
+<view class="list">
+    <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_appmsg">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image class="weui-media-box__thumb" src="../../lib/img/cake1.jpg" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title">金凤起舞</view>
+                    <view class="weui-media-box__desc">赞了该商品</view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-panel__ft">
+            <view class="title pd">今天分享一下蛋挞液的配方</view>
+            <view class="desc pd">分享一下蛋挞液的配方和制作过程</view>
+            <view style="width: {{winWindow}}px;height: {{winWindow * 0.6}}px;padding: 0 30rpx;box-sizing: border-box;">
+                <image src="../../lib/img/cake1.jpg" mode="aspectFill" style="width: 100%;height: 100%;"></image>
+            </view>
+            <view class="weui-flex pd actions">
+                <view class="weui-flex__item">
+                    <image src="../../lib/img/icon-zan1.png" class="icon"></image>
+                    210
+                    <image src="../../lib/img/icon-xiaoxi1.png" class="icon" style="margin-left: 20rpx;"></image>
+                    36
+                </view>
+                <view class="text-rt"><image src="../../lib/img/icon-xin1.png" class="icon"></image></view>
+            </view>
+        </view>
+    </view>
+    <view class="horizontal-line"></view>
+    <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_appmsg">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image class="weui-media-box__thumb" src="../../lib/img/cake1.jpg" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title">金凤起舞</view>
+                    <view class="weui-media-box__desc">赞了该商品</view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-panel__ft">
+            <view class="title pd">今天分享一下蛋挞液的配方</view>
+            <view class="desc pd">分享一下蛋挞液的配方和制作过程</view>
+            <view style="width: {{winWindow}}px;height: {{winWindow * 0.6}}px;padding: 0 30rpx;box-sizing: border-box;">
+                <image src="../../lib/img/cake1.jpg" mode="aspectFill" style="width: 100%;height: 100%;"></image>
+            </view>
+            <view class="weui-flex pd actions">
+                <view class="weui-flex__item">
+                    <image src="../../lib/img/icon-zan1.png" class="icon"></image>
+                    210
+                    <image src="../../lib/img/icon-xiaoxi1.png" class="icon" style="margin-left: 20rpx;"></image>
+                    36
+                </view>
+                <view class="text-rt"><image src="../../lib/img/icon-xin1.png" class="icon"></image></view>
+            </view>
+        </view>
+    </view>
+</view>
