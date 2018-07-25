@@ -1,0 +1,207 @@
+.home {
+    padding-top: 55rpx;
+}
+
+.date-box .caret {
+    transform: rotate(-45deg);
+    position: absolute;
+    right: -14rpx;
+    bottom: 10rpx;
+    transition: all 0.3s linear;
+}
+
+.date-box .header-flex, .list-flex, .choose-date {
+    background: #fff;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.date-box .header-flex {
+    top: 0;
+}
+
+.list-flex {
+    top: 70rpx;
+    bottom: 70rpx;
+}
+
+.choose-date {
+    height: 70rpx;
+    line-height: 70rpx;
+    background: #f6f6f6;
+    bottom: 0;
+}
+
+.list-flex {
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.flex-lf.active .caret {
+    transform: rotate(135deg);
+    transform-origin: center top;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-img {
+    width: 100vw;
+    height: 75vw;
+}
+
+.header-title {
+    color: #666;
+    margin-top: 30rpx;
+}
+
+.header-desc {
+    width: 80%;
+    line-height: 48rpx;
+    margin: 60rpx auto;
+}
+
+.header-auth {
+    color: #666;
+    margin-bottom: 50rpx;
+}
+
+.header-flex {
+    height: 50rpx;
+    color: #999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20rpx;
+}
+
+.flex-lf {
+    flex: 0 0 160rpx;
+    font-size: 24rpx;
+    padding-left: 30rpx;
+    text-align: left;
+    position: relative;
+}
+
+.flex-lf-text {
+    position: relative;
+    top: -4rpx;
+    left: 8rpx;
+}
+
+.flex-rt {
+    flex: 1;
+    padding-right: 30rpx;
+    text-align: right;
+}
+
+.flex-rt image {
+    width: 30rpx;
+    height: 30rpx;
+    margin-left: 40rpx;
+}
+
+.flex-rt-text {
+    font-size: 22rpx;
+    position: relative;
+    top: -10rpx;
+    left: 6rpx;
+}
+
+.catalog-title {
+    padding: 14rpx;
+    text-align: center;
+}
+
+.catalog-title .arrow.active {
+    transform: rotate(180deg);
+}
+
+.catalog-item {
+    display: flex;
+    align-items: center;
+    padding: 20rpx 0;
+}
+
+.item-lf {
+    flex: 0 0 60rpx;
+    text-align: center;
+}
+
+.item-rt {
+    flex: 1;
+    font-size: 26rpx;
+}
+
+.catalog-list {
+    display: none;
+}
+
+.catalog-list.active {
+    display: block;
+}
+
+.list-title {
+    padding: 20rpx 0;
+}
+
+.content-title {
+    font-size: 30rpx;
+    font-weight: 600;
+}
+
+.content-auth {
+    color: #666;
+    margin: 16rpx 0;
+}
+
+.content-desc {
+    color: #999;
+    line-height: 42rpx;
+    margin: 10rpx 0 40rpx;
+}
+
+.list-flex {
+    background: #fff;
+    padding-left: 15px;
+    box-sizing: border-box;
+    top: 70rpx;
+}
+
+.list-flex-item {
+    position: relative;
+    padding-top: 20rpx;
+}
+
+.list-flex .line {
+    border-top: 1px solid #eee;
+    margin-bottom: 50rpx; 
+}
+
+.list-flex .month {
+    color: #666;
+    background: #fff;
+    padding: 0 16rpx;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.list-flex .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30rpx;
+}
+
+.list-flex .list-item {
+    padding: 0 30rpx 30rpx 0;
+    box-sizing: border-box;
+}
+
+.list-flex .list-item .text {
+    margin-top: 20rpx;
+}

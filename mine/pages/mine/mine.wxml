@@ -1,0 +1,68 @@
+<!-- <view class="container login text-center" wx:if="{{!is_login}}" style="height: {{windowHeight}}px;background: url('../../libs/img/login3.jpg') no-repeat;background-size: cover;">
+    <view class="login-box">
+        <button class="login-enter" style='display: block'
+            open-type="getUserInfo" 
+            bindgetuserinfo="bindGetUserInfo">
+            <view>登录</view>
+            <view>STORY</view>
+        </button>
+        <view>还没有登录？点击登录</view>
+    </view>
+    <view class="login-types">
+        <view class="types">
+            <view style="flex: 1;">
+                <image src="../../libs/img/icon-weixin.png" class="icon" style="width: 60rpx;"></image>
+            </view>
+            <view style="flex: 1;">
+                <image src="../../libs/img/icon-qq.png" class="icon"></image>
+            </view>
+        </view>
+        <view>
+            <text style="color: #666;">创建账号即代表您同意</text>用户服务协议
+        </view>
+    </view>
+</view> -->
+
+<view class="container login" style="height: {{windowHeight}}px;background: #f2f2f2;">
+    <block wx:if="{{is_login}}">
+        <view class="mine-flex">
+            <view class="mine-img">
+                <image src="{{userInfo.avatarUrl ? userInfo.avatarUrl : '../../libs/img/login.jpg'}}" style="width: 100%;height: 100%;"></image>
+            </view>
+            <view style="flex: 1;line-height: 40rpx;">
+                <view>{{userInfo.province}} . {{userInfo.city}}</view>
+                <view>{{userInfo.nickName}}</view>
+            </view>
+        </view>
+        <view class="bg-content"></view>
+        <view class="mine-attention">
+            <view style="flex: 1;font-size: 32rpx;">我的关注</view>
+            <view>
+                <text class="total">12</text>
+                <image src="../../libs/img/icon-arrow-top.png" class="arrow arrow-right" mode="aspectFill"></image>
+            </view>
+        </view>
+        <view class="bg-content"></view>
+        <view class="mine-attention">
+            <view style="flex: 1;font-size: 32rpx;">我的收藏</view>
+            <view>
+                <text class="total">0</text>
+                <image src="../../libs/img/icon-arrow-top.png" class="arrow arrow-right" mode="aspectFill"></image>
+            </view>
+        </view>
+        <view class="bg-content"></view>
+        <view class="mine-attention" style="justify-content: center;">
+            <view style="font-size: 40rpx;" bindtap='exitLogin'>退出登录</view>
+        </view>
+    </block>
+    <block wx:else>
+        <view class="mine-flex">
+            <view class="mine-img">
+                <image src="../../libs/img/login.jpg" style="width: 100%;height: 100%;"></image>
+            </view>
+            <view style="flex: 1;line-height: 40rpx;">
+                <button class="login-btn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">登录/注册</button>
+            </view>
+        </view>
+    </block>
+</view>

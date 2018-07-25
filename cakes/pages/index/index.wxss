@@ -1,5 +1,5 @@
 /**index.wxss**/
-.weui-search-bar {
+/* .weui-search-bar {
   background-color: transparent;
   padding: 16rpx 36rpx;
   border: 0;
@@ -24,7 +24,7 @@
 }
 .homm-flex .text {
     font-size: 24rpx;
-}
+} */
 
 
 swiper {

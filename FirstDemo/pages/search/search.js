@@ -6,7 +6,8 @@ Page({
     inputShowed: false,
     inputVal: ""
   },
-  onLoad: function () {
+  onLoad: function (opts) {
+    console.log(JSON.parse(opts.aa))
     this.data.inputShowed = true
   },
   toHome: function () {

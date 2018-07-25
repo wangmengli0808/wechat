@@ -1,0 +1,9 @@
+<view class="swiper">
+    <swiper indicator-dots="{{false}}" autoplay="{{false}}" previous-margin="50px" next-margin="50px">
+        <block wx:for="{{cakes}}" wx:key="index">
+            <swiper-item style="padding: 0 30rpx;box-sizing: border-box">
+                <image class="slide-image" mode="aspectFill" src="{{item.img}}" style="width: 100%;height: 100%;" />
+            </swiper-item>
+        </block>
+    </swiper>
+</view>

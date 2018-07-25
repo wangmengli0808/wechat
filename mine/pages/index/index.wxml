@@ -1,0 +1,98 @@
+<!--index.wxml-->
+<view class="container home">
+    <view class="date-box">
+        <view class="header-flex">
+            <view class="flex-lf {{is_show ? 'active' : ''}}" style="color:#333;" bindtap="choose">
+                <text style="font-size: 40rpx;margin-right: 8rpx;">{{currentDay}}</text>
+                <text>{{currentMonth}}</text>
+                <text class="caret"></text>
+            </view>
+            <view class="flex-rt" style="font-size: 28rpx;">
+                <text>{{currentCity}} · {{weather}}</text>
+            </view>
+        </view>
+        <scroll-view class="list-flex text-center" scroll-y  wx:if="{{is_show}}">
+            <view class="list-flex-item" wx:for="{{dateList}}" wx:key="{{item.date}}" wx:for-item="data">
+                <view class="line"></view>
+                <view class="month">{{data.month}}</view>
+                <view class="content">
+                    <view class="list-item" style="width: 50%;" wx:for="{{data.data}}" wx:key="index" wx:for-item="item">
+                        <view style="width: 100%;height: {{windowWidth * 2 * 0.5 * 0.6}}rpx;">
+                            <image src="{{item.img_src}}" mode="aspectFill" style="width: 100%;height: 100%;"></image>
+                        </view>
+                        <view class="text">{{item.date}}</view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+        <view class="choose-date text-center" wx:if="{{is_show}}">
+            <picker mode="date" value="{{date}}" start="2015-09" end="2018-07" fields="month" bindchange="bindDateChange">
+                <text>{{date}}</text>
+                <image src="../../libs/img/icon-arrow-top.png" class="arrow arrow-bottom" mode="aspectFill"></image>
+            </picker>
+        </view>
+    </view>
+    <view class="header-content">
+        <view class="header-img">
+            <image src="../../libs/img/timg2.jpg" mode="aspectFill" style="width: 100%;height: 100%;"></image>
+        </view>
+        <view class="header-title">摄影 | 远方</view>
+        <view class="header-desc">人生是单打独斗，住的再近也无法同舟共济。人生是单打独斗，住的再近也无法同舟共济。人生是单打独斗，住的再近也无法同舟共济。</view>
+        <view class="header-auth">张怡微</view>
+        <view class="header-flex">
+            <view class="flex-lf">
+                <image src="../../libs/img/icon-faxian.png" mode="aspectFill" style="width: 24rpx;;height: 24rpx;"></image>
+                <text class="flex-lf-text">发现</text>
+            </view>
+            <view class="flex-rt">
+                <image src="../../libs/img/icon-share.png" mode="aspectFill"></image>
+                <image src="../../libs/img/icon-xin.png" mode="aspectFill"></image>
+                <text class="flex-rt-text">6181</text>
+            </view>
+        </view>
+    </view>
+    <view class="bg-content"></view>
+    <view class="catalog">
+        <view class="catalog-title" bindtap="toggleCatalog">
+            一个
+            <image src="../../libs/img/icon-arrow-top.png" class="arrow {{catalog_show ? '' : 'active'}}" mode="aspectFill"></image>
+        </view>
+        <view class="catalog-list {{catalog_show ? 'active' : ''}}" animation="{{animationData}}">
+            <view class="catalog-item" wx:for="{{catalogs}}" wx:key="index">
+                <view class="item-lf">
+                    <image src="../../libs/img/icon-arrow-top.png" class="arrow arrow-right" mode="aspectFill"></image>
+                </view>
+                <view class="item-rt">
+                    <view>{{item.title}}</view>
+                    <view>{{item.desc}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="list">
+        <view class="list-item" wx:for="{{lists}}" wx:key="index">
+            <view class="bg-content"></view>
+            <view class="list-title text-center">- {{item.title}} -</view>
+            <view class="content" style="padding: 0 30rpx;">
+                <view class="content-title">{{item.article_title}}</view>
+                <view class="content-auth">文 / {{item.article_auth}}</view>
+                <view style="width: 100%;height: {{(windowWidth * 2 - 30) * 0.6}}rpx">
+                    <image src="{{item.img_src}}" mode="aspectFill" style="width: 100%;height: 100%;"></image>
+                </view>
+                <view class="content-desc">
+                    {{item.article_desc}}
+                </view>
+                <view class="header-flex">
+                    <view class="flex-lf" style="padding-left: 0;">
+                        {{item.time}}
+                    </view>
+                    <view class="flex-rt">
+                        <image src="../../libs/img/icon-share.png" mode="aspectFill"></image>
+                        <image src="../../libs/img/icon-{{item.is_collect ? 'xin-selected' : 'xin'}}.png" data-collect="{{item.id}}" bindtap="collect" mode="aspectFill"></image>
+                        <text class="flex-rt-text">{{item.love_count}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

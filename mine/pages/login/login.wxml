@@ -1,0 +1,8 @@
+<view class="login-page">
+    <view class="login-text text-center">
+        <text>推荐登录方式</text>
+    </view>
+    <view>
+        <button class="login-btn" open-type="getPhoneNumber" bindgetphonenumber="getphonenumber">微信账号登录</button>
+    </view>
+</view>

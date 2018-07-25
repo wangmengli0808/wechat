@@ -32,7 +32,11 @@ Page({
             price: 150,
             unit_price: 1960.5
         }
-    ]
+    ],
+    aa: {
+        b: 12
+    },
+    bb: [1,2,3,4]
   },
   //事件处理函数
   onLoad() {
@@ -41,8 +45,9 @@ Page({
     })
   },
   toSearch() {
+    var aa = JSON.stringify(this.data.aa)
     wx.navigateTo({
-      url: '../search/search'
+        url: '../search/search?aa=' + aa
     })
   },
   typeToggle(e) {

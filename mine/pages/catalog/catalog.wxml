@@ -1,0 +1,39 @@
+<view class="catalog">
+    <view class="swiper">
+        <swiper style="height: {{windowWidth * 0.67}}px" autoplay="auto" interval="4000" duration="500" current="0" autoplay="{{true}}" bindtap="previewImage" bindchange="onChange">
+            <block wx:for="{{swiperImgs}}" wx:key="index">
+                <swiper-item style="width: 100%;height: 232px;">
+                    <image class="swiper-img" mode="widthFix" data-src="{{item.middleURL}}" src="{{item.middleURL}}" style="width: 100%;height: 100%;" />
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="dots">
+            <block wx:for="{{swiperImgs}}" wx:key="index">
+                <view class="dot{{index == currentIndex ? ' active' : ''}}"></view>
+            </block>
+        </view>
+    </view>
+    <view class="bg-content"></view>
+    <view class="navigation">
+        <view class="navigation-title">分类导航</view>
+        <view class="navigation-box">
+            <view class="box-item" bindtap="play" wx:for="{{catalogs}}" wx:key="index">
+                <view class="item-img">
+                    <image class="img" mode="aspectFill" src="{{item.src}}" />
+                </view>
+                <view class="text">{{item.title}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="catalog-list">
+        <view wx:for="{{catalogs}}" wx:key="index">
+            <view class="bg-content"></view>
+            <view class="list-item">
+                <view class="list-img" style="width: 100%;height: 414rpx;">
+                    <image class="img" mode="aspectFill" src="{{item.src}}" />
+                </view>
+                <view class="text" style="margin-top: 25rpx;">{{item.title}}</view>
+            </view>
+        </view>
+    </view>
+</view>
